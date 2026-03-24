@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <PackageReference Include="xunit" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+        <PackageReference Include="coverlet.collector" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../../ReciNaKlik.Shared/ReciNaKlik.Shared.csproj" />
+        <ProjectReference Include="../../ReciNaKlik.Domain/ReciNaKlik.Domain.csproj" />
+        <ProjectReference Include="../../ReciNaKlik.Application/ReciNaKlik.Application.csproj" />
+    </ItemGroup>
+
+</Project>
